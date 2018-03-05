@@ -3,7 +3,12 @@ import App from './App.vue';
 import router from './router';
 import Vuetify from 'vuetify';
 
-Vue.use(Vuetify);
+Vue.use(Vuetify, {
+  theme: {
+    primary: '#033863',
+    secondary: '#0099cc',
+  },
+});
 import 'vuetify/dist/vuetify.min.css';
 
 Vue.config.productionTip = false;
