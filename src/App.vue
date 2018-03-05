@@ -33,7 +33,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-toolbar class="white" fixed app>
-      <img src="./VUPLAY.png" alt="" style="height: 37px;">
+      <img :src="`${baseUrl}VUPLAY.png`" alt="" style="height: 37px;">
       <v-spacer></v-spacer>
       <v-toolbar-side-icon @click.native.stop="drawer = !drawer" class="hidden-sm-and-up"></v-toolbar-side-icon>
     </v-toolbar>
@@ -78,6 +78,7 @@ export default {
       mini: true,
       right: null,
       links: ['About Us', 'Products', 'Contact Us'],
+      baseUrl: process.env.BASE_URL,
     };
   },
 };
