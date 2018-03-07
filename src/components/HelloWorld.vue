@@ -1,6 +1,5 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
     <p>
       For guide and recipes on how to configure / customize this project
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci blanditiis, quaerat quos culpa, in ea a illum facere numquam quisquam maxime saepe accusamus nemo natus temporibus aliquam incidunt? Eaque, tempore.
@@ -41,12 +40,10 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
+import { Component, Vue } from 'vue-property-decorator';
 
 @Component
-export default class HelloWorld extends Vue {
-  @Prop() private msg!: string;
-}
+export default class HelloWorld extends Vue { }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
